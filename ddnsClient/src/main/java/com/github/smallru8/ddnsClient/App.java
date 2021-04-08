@@ -3,6 +3,10 @@ package com.github.smallru8.ddnsClient;
 import java.awt.EventQueue;
 import java.util.Timer;
 
+import javax.swing.UIManager;
+
+import com.formdev.flatlaf.FlatDarkLaf;
+
 public class App 
 {
 	
@@ -36,6 +40,12 @@ public class App
 	 */
     public static void main( String[] args )
     {
+    	try {
+		    UIManager.setLookAndFeel(new FlatDarkLaf());
+		} catch( Exception ex ) {
+			ex.printStackTrace();
+		}
+    	
     	cfg = new Config();
     	cfg.getConf();
     	int MAX = args.length;

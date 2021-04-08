@@ -26,6 +26,7 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
 import javax.swing.JCheckBox;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
 import java.awt.event.MouseAdapter;
@@ -98,7 +99,9 @@ public class MainWindow {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		
+		frame.setTitle("KWDD");
+		ImageIcon img = new ImageIcon("resources/ico.png");
+		frame.setIconImage(img.getImage());
 		try {
 			image = ImageIO.read(new File("resources/ico.png"));
 		} catch (IOException e1) {
