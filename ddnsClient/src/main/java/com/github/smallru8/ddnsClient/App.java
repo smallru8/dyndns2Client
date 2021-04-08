@@ -1,6 +1,7 @@
 package com.github.smallru8.ddnsClient;
 
 import java.awt.EventQueue;
+import java.io.IOException;
 import java.util.Timer;
 
 import javax.swing.UIManager;
@@ -37,8 +38,9 @@ public class App
 	 * -nogui
 	 * -cip http://checkip.amazonaws.com/
 	 * -t 60
+	 * @throws IOException 
 	 */
-    public static void main( String[] args )
+    public static void main( String[] args ) throws IOException
     {
     	try {
 		    UIManager.setLookAndFeel(new FlatDarkLaf());
@@ -85,5 +87,8 @@ public class App
 				}
 			}
 		});
+    	
+    	System.out.println("Running, press any key to stop...");
+    	System.in.read();
     }
 }
