@@ -6,9 +6,9 @@ Update your ip to DNS which supports dyndns2 protocol.
 ## Description
 Dyndns2Client is a cross-platform software. You can install it on Linux, macOS, and Windows.
 
-On Windows
+On Windows  
 ![](https://i.imgur.com/oXspE0e.png)
-After minimize window
+After minimize window  
 ![](https://i.imgur.com/uHpGCX0.png)
 It would run in the background. Click tray icon to open control window.
 
